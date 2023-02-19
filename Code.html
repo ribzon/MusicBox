@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Box</title>
+    <style>
+      button {
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Music Box</h1>
+    <audio id="music" src="music.mp3"></audio>
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+    <script>
+      const music = document.getElementById("music");
+
+      function play() {
+        music.play();
+      }
+
+      function pause() {
+        music.pause();
+      }
+    </script>
+  </body>
+</html>
